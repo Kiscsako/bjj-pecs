@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 
 :root {
     --main-bg-color: #F4F9F9;
+
+    --desktop-font-size: 22px;
+    --tablet-font-size: 18px;
+    --mobile-font-size: 16px;
 }
 
 * {
@@ -12,9 +16,10 @@
     
 }
 body {
-    font-family: Montserrat;
-    font-size: 16px;
+    font-family: Libre+Baskerville;
+    font-size: var(--desktop-font-size);
     background-color: var(--main-bg-color);
+    
 }
 
 a {
@@ -27,30 +32,106 @@ li {
 }
 
 nav {
+    width: 100%;
+    max-width: 100%;
+    padding: 30px 0px;
+    margin: 0px auto 40px auto;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 
 }
 
 .nav_links_container , .social_links_container {
     display: flex;
-    margin: 30px;
-    flex: 1;
+    justify-content: space-evenly;
+}
+.nav_links_container {
+    flex: 2;
+    justify-content: space-around;
+}
+
+.nav_gap {
+    flex: 2;
 }
 
 .social_links_container {
     justify-content: right;
+    flex: 1;
 }
 
 .nav_link {
-    margin: 0px 20px;
+    font-weight: 500;
 }
 .nav_link a {
-    padding: 15px;
+    padding: 25px;
 }
 
+.header_img_container {
+    background-position: inherit;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(244,249,249,0) 0%, rgba(244,249,249,0.681185853247549) 70%, rgba(244,249,249,1) 100%),
+    url(/pictures/csoportkep_1920.png);
+    background-size: cover;
+    margin:  20px auto;
+    height: 38vw;
+    width: 100%;
+    opacity: 80%;
+}
 
+.logo_container {
+    width:100%;
+    text-align: center;
+    position: relative;
+}
 
+.logo_container .logo {
+    width: 18%;
+    position: relative;
+    top: -16vw;
+    opacity: 90%;
+   
+}
+/* Tablet */
+@media screen and (max-width: 1200px) {
+    body {
+        font-size: var(--tablet-font-size);
+    }
+    nav {
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 0;
+    }
+    .nav_links_container , .social_links_container {
+        display: flex;
+        width: 100%;
+        margin: 10px;
+    }
+    .nav_link {
+        margin: 10px;
+    }
+    .nav_link a {
+
+        padding: 10px;
+    }
+    
+
+}
+
+/* Mobile */
+
+@media screen and (max-width: 600px) {
+    body {
+        font-size: var(--mobile-font-size);
+    }
+   
+    .nav_links_container , .social_links_container {
+        width: 100%;
+        justify-content: center;
+    }
+    .nav_gap {
+        display: none;
+    }
+}
 
 
