@@ -1,12 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
 :root {
     --main-bg-color: #F4F9F9;
+    --sec-bg-color: #2A2D43;
+    --desktop-font-size: 18px;
+    --tablet-font-size: 16px;
+    --mobile-font-size: 14px;
 
-    --desktop-font-size: 22px;
-    --tablet-font-size: 18px;
-    --mobile-font-size: 16px;
+    
 }
 
 * {
@@ -16,7 +18,7 @@
     
 }
 body {
-    font-family: Libre+Baskerville;
+    font-family: Lexend Exa;
     font-size: var(--desktop-font-size);
     background-color: var(--main-bg-color);
     
@@ -24,7 +26,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--sec-bg-color);
 }
 
 li {
@@ -34,25 +36,20 @@ li {
 nav {
     width: 100%;
     max-width: 100%;
-    padding: 30px 0px;
-    margin: 0px auto 40px auto;
+    padding: 10px 0px;
+    margin: 15px auto 20px auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 
 }
 
 .nav_links_container , .social_links_container {
     display: flex;
-    justify-content: space-evenly;
-}
-.nav_links_container {
-    flex: 2;
     justify-content: space-around;
 }
-
-.nav_gap {
-    flex: 2;
+.nav_links_container {
+    justify-content: space-around;
 }
 
 .social_links_container {
@@ -61,10 +58,16 @@ nav {
 }
 
 .nav_link {
-    font-weight: 500;
+    font-weight: 300;
+    margin: 10px;
 }
 .nav_link a {
-    padding: 25px;
+    padding: 20px;
+}
+.nav_link a:hover {
+    background-color: #2A2D43;
+    color: var(--main-bg-color);
+    border-radius: 50px;
 }
 
 .header_img_container {
@@ -76,7 +79,7 @@ nav {
     margin:  20px auto;
     height: 38vw;
     width: 100%;
-    opacity: 80%;
+    opacity: 85%;
 }
 
 .logo_container {
@@ -89,8 +92,15 @@ nav {
     width: 18%;
     position: relative;
     top: -16vw;
-    opacity: 90%;
-   
+    opacity: 95%;
+}
+hr {
+    background-color: var(--sec-bg-color);
+    opacity: 10%;
+}
+
+.fa-facebook-square, .fa-instagram {
+    font-size: 1.4rem;
 }
 /* Tablet */
 @media screen and (max-width: 1200px) {
