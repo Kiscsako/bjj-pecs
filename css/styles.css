@@ -7,8 +7,6 @@
     --desktop-font-size: 18px;
     --tablet-font-size: 16px;
     --mobile-font-size: 14px;
-
-    
 }
 
 * {
@@ -20,8 +18,7 @@
 body {
     font-family: Lexend Exa;
     font-size: var(--desktop-font-size);
-    background-color: var(--main-bg-color);
-    
+    background-color: var(--main-bg-color); 
 }
 
 a {
@@ -135,6 +132,7 @@ hr {
     body {
         font-size: var(--mobile-font-size);
     }
+   
     .nav-control {
         display: flex;
         width: 100%;
@@ -145,7 +143,7 @@ hr {
     }
     .nav-control h1 {
         font-weight: 300;
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .fa-bars {
         font-size: 1.2rem;
@@ -164,12 +162,16 @@ hr {
         width: 100%;
         margin: auto;
         text-align: center;
+        transition: ease 0.4s;
     }
 
     .nav_link {
         width: 80%;
         margin: auto;
         padding: 15px;
+    }
+    .responsive {
+        display: block;
     }
 
 }
