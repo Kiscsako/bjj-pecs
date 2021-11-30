@@ -65,10 +65,17 @@ nav {
     padding: 20px;
     transition: ease-in 0.5s;
 }
-.nav_link a:hover {
-    background-color: #2A2D43;
+.active a {
+    background-color: var(--sec-bg-color);
     color: var(--main-bg-color);
     border-radius: 50px;
+    opacity: 85%;
+}
+.nav_link .active:hover {
+    background-color: var(--sec-bg-color);
+}
+.nav_link a:hover {
+    opacity: 100%;
 }
 
 .header_img_container {
