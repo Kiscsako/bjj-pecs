@@ -86,7 +86,7 @@ nav {
     background-position: inherit;
     background-size: cover;
     background: linear-gradient(180deg, rgba(244,249,249,0) 0%, rgba(244,249,249,0.681185853247549) 70%, rgba(244,249,249,1) 100%),
-    url(./pictures/csoportkep_1920.png);
+    url(/pictures/csoportkep_1920.png);
     background-size: cover;
     margin:  20px auto;
     height: 38vw;
