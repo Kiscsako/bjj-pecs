@@ -40,6 +40,83 @@ nav {
     justify-content: space-between;
 
 }
+
+/*---------- CONTENT ----------*/
+
+main {
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
+                rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border-radius: 10px;
+}
+.main-container {
+    width: 100%;
+    text-align: justify;
+    padding-bottom: 25px;
+}
+.main-title {
+    width: 100%;
+    max-width: 800px;
+    margin: 30px auto 45px;
+    text-align: center;
+    font-weight: 300;
+    background-color: var(--sec-bg-color);
+    color: var(--main-bg-color);
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+                rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+                rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+                rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+
+.inner-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: auto;
+    flex-wrap: wrap;
+}
+.inner-img-container {
+    width: 45%;
+    min-width: 300px;
+    height: auto;
+}
+.inner-img-container img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+                rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+                rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+                rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.inner-txt-container {
+    background-color: var(--sec-bg-color);
+    color: var(--main-bg-color);
+    max-width: 45%;
+    min-width: 300px;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
+                rgba(0, 0, 0, 0.07) 0px 2px 4px, 
+                rgba(0, 0, 0, 0.07) 0px 4px 8px, 
+                rgba(0, 0, 0, 0.07) 0px 8px 16px, 
+                rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+                rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+.inner-txt {
+    margin: 25px auto;
+}
 .nav-control {
     display: none;
 }
@@ -85,7 +162,10 @@ nav {
 .header_img_container {
     background-position: inherit;
     background-size: cover;
-    background: linear-gradient(180deg, rgba(244,249,249,0) 0%, rgba(244,249,249,0.681185853247549) 70%, rgba(244,249,249,1) 100%),
+    background: linear-gradient(180deg, 
+     rgba(244,249,249,0) 0%,
+     rgba(244,249,249,0.681185853247549) 70%,
+     rgba(244,249,249,1) 100%),
     url(../pictures/csoportkep_1920.png);
     background-size: cover;
     margin:  20px auto;
@@ -111,18 +191,23 @@ hr {
     opacity: 10%;
 }
 
-.fa-facebook-square, .fa-instagram {
+.fa-facebook-square, 
+.fa-instagram, 
+.fa-phone-square-alt {
     font-size: 1.4rem;
 }
 
-main {
-    height: 30vh;
-}
+
 /* --------------FOOTER-------------- */
 
 footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    display: block;
     background-color: var(--sec-bg-color);
     color: var(--main-bg-color);
+    
 }
 footer h2 {
     font-weight: 500;
@@ -208,14 +293,16 @@ border-radius: 10px;
     width: 100%;
     font-size: var(--desktop-font-size);
 }
-.footer_social_item .fa-facebook-square, .footer_social_item .fa-instagram {
+.footer_social_item .fa-facebook-square, 
+.footer_social_item .fa-instagram, 
+.footer_social_item .fa-phone-square-alt {
     color: var(--main-bg-color);
     padding: 10px;
     border-radius: 5px;
     transition: 0.6s;
     
 }
-.footer_social_item .fa-facebook-square:hover, .footer_social_item .fa-instagram:hover {
+.footer_social_item .fa-facebook-square:hover, .footer_social_item .fa-instagram:hover, .footer_social_item .fa-phone-square-alt:hover {
     background-color: var(--main-bg-color);
     color: var(--sec-bg-color);
 }
@@ -240,6 +327,13 @@ border-radius: 10px;
     }
     .nav_link a {
         padding: 15px;
+    }
+
+    
+    .inner-content div {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 15px;
     }
     /* ----------FOOTER----------*/
     .footer_container {
