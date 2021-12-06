@@ -4,9 +4,9 @@
 :root {
     --main-bg-color: #F4F9F9;
     --sec-bg-color: #2A2D43;
-    --desktop-font-size: 18px;
-    --tablet-font-size: 16px;
-    --mobile-font-size: 14px;
+    --desktop-font-size: 1.2rem;
+    --tablet-font-size: 1rem;
+    --mobile-font-size: 0.8rem;
 }
 
 * {
@@ -80,7 +80,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    margin: auto;
+    margin: 60px auto;
     flex-wrap: wrap;
 }
 .inner-img-container {
