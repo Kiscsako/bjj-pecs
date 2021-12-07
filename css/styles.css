@@ -45,7 +45,7 @@ nav {
 
 main {
     display: block;
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
     padding: 25px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
@@ -55,7 +55,7 @@ main {
 .main-container {
     width: 100%;
     text-align: justify;
-    padding-bottom: 25px;
+    margin-bottom: 60px;
 }
 .main-title {
     width: 100%;
@@ -116,7 +116,6 @@ main {
 }
 .inner-txt {
     margin: 25px auto;
-    width: 100%;
 }
 .nav-control {
     display: none;
