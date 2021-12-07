@@ -116,6 +116,7 @@ main {
 }
 .inner-txt {
     margin: 25px auto;
+    width: 100%;
 }
 .nav-control {
     display: none;
@@ -185,6 +186,8 @@ main {
     position: relative;
     top: -16vw;
     opacity: 95%;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 hr {
     background-color: var(--sec-bg-color);
