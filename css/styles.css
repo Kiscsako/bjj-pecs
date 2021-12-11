@@ -15,6 +15,9 @@
     box-sizing: border-box;
     
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Lexend Exa;
     font-size: var(--desktop-font-size);
@@ -111,12 +114,17 @@ main {
                 rgba(0, 0, 0, 0.07) 0px 2px 4px, 
                 rgba(0, 0, 0, 0.07) 0px 4px 8px, 
                 rgba(0, 0, 0, 0.07) 0px 8px 16px, 
-                rgba(0, 0, 0, 0.07) 0px 16px 32px, 
+                rgba(131, 46, 46, 0.07) 0px 16px 32px, 
                 rgba(0, 0, 0, 0.07) 0px 32px 64px;
 }
 .inner-txt {
     margin: 25px auto;
 }
+
+.person {
+    max-width: 400px;
+}
+
 .nav-control {
     display: none;
 }
@@ -195,7 +203,8 @@ hr {
 
 .fa-facebook-square, 
 .fa-instagram, 
-.fa-phone-square-alt {
+.fa-phone-square-alt,
+.fa-map-marker-alt {
     font-size: 1.4rem;
 }
 
@@ -241,6 +250,7 @@ footer hr {
     display: flex;
     align-items: top;
 }
+
 .call_to_action  {
 display: flex;
 min-width: 200px;
@@ -297,16 +307,23 @@ border-radius: 10px;
 }
 .footer_social_item .fa-facebook-square, 
 .footer_social_item .fa-instagram, 
-.footer_social_item .fa-phone-square-alt {
+.footer_social_item .fa-phone-square-alt,
+.footer_social_item .fa-map-marker-alt {
     color: var(--main-bg-color);
     padding: 10px;
     border-radius: 5px;
     transition: 0.6s;
     
 }
-.footer_social_item .fa-facebook-square:hover, .footer_social_item .fa-instagram:hover, .footer_social_item .fa-phone-square-alt:hover {
+.footer_social_item .fa-facebook-square:hover,
+.footer_social_item .fa-instagram:hover,
+.footer_social_item .fa-phone-square-alt:hover,
+.footer_social_item .fa-map-marker-alt:hover {
     background-color: var(--main-bg-color);
     color: var(--sec-bg-color);
+}
+.footer_address {
+    color: var(--main-bg-color);
 }
 
 /* Tablet */
@@ -336,6 +353,12 @@ border-radius: 10px;
         width: 100%;
         max-width: 100%;
         margin-top: 15px;
+    }
+    .inner-content .person {
+        max-width: 300px;
+    }
+    .person h3 {
+        text-align: center;
     }
     /* ----------FOOTER----------*/
     .footer_container {

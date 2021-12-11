@@ -1,0 +1,98 @@
+.schedule-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+}
+.days {
+   margin: 5px;
+   margin-top: 50px;
+}
+.title {
+    min-width: 250px;
+    text-align: center;
+}
+
+.weekend h3 {
+    background-color: #2A2D43;
+    color: #F4F9F9;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.schedule-content {
+    padding: 5px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.schedule-item {
+    position: relative;
+    min-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: #FEFBF3;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+}
+
+.blank-item {
+    background-color: #FEFBF3;
+    font-size: 1rem;
+}
+
+.time {
+    position: absolute;
+    font-size: 0.8rem;
+    top: 10px;
+    right: 10px;
+}
+h3 {
+    width: 100%;
+    background-color: #F4F9F9;
+    color: #2A2D43;
+    display: block;
+    padding: 20px 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;;
+    margin: 0px;
+    margin-bottom: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    text-transform: capitalize;
+}
+hr { 
+    margin: 0;
+}
+
+.kids {
+    background-color: #A2DBFA;
+}
+
+.beginners { 
+background-color: #39A2DB;
+}
+
+.advanced {
+    background-color: #9CC094;
+}
+
+.mma {
+    background-color: #FFC069;
+}
+
+.open {
+    background-color: #DCD6F7;
+}
+
+.schedule-item h4 {
+    text-transform: capitalize;
+}
+
