@@ -48,9 +48,9 @@ nav {
 
 main {
     display: block;
-    width: 95%;
+    width: 100%;
     margin: 20px auto;
-    padding: 25px;
+    padding: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
                 rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
@@ -441,6 +441,7 @@ border-radius: 10px;
 ---------- Timetable ----------
 */
 
+main .sch
 .schedule-container {
     display: flex;
     width: 100%;
@@ -489,6 +490,7 @@ border-radius: 10px;
 .schedule-item {
     position: relative;
     min-height: 100px;
+    min-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
