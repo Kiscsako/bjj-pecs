@@ -472,7 +472,7 @@ border-radius: 10px;
     border-top-right-radius: 8px;;
     margin: 0px;
     margin-bottom: 10px;
-    min-width: 200px;
+    min-width: 190px;
     text-align: center;
     background-color: #2A2D43;
     color: #F4F9F9;
@@ -482,7 +482,7 @@ border-radius: 10px;
     
 .schedule-content {
     padding: 10px;
-    width: 200px;
+    width: 190px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
