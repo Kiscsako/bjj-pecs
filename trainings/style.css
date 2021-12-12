@@ -5,26 +5,38 @@
     justify-content: center;
     align-items: center;
 }
+.schedule-title {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
 .schedule {
     display: flex;
     flex-wrap: wrap;
-    margin:auto;
     justify-content: center;
 }
-.days {
+.day {
    margin: 5px;
-   margin-top: 50px;
+   margin-top: 60px;
 }
-.title {
-    min-width: 250px;
+.day-title h3 {
+    width: 100%;
+    background-color: #F4F9F9;
+    color: #2A2D43;
+    display: block;
+    padding: 20px 0px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;;
+    margin: 0px;
+    margin-bottom: 10px;
+    min-width: 200px;
     text-align: center;
-}
-
-.weekend h3 {
     background-color: #2A2D43;
     color: #F4F9F9;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
+
+    
 .schedule-content {
     padding: 5px;
     border-bottom-left-radius: 8px;
@@ -33,7 +45,7 @@
 }
 .schedule-item {
     position: relative;
-    min-height: 80px;
+    min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,6 +54,11 @@
     border-radius: 5px;
     background-color: #F4F9F9;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: ease 0.6s;
+}
+.schedule-item h4 {
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .blank-item {
@@ -55,41 +72,52 @@
     top: 10px;
     right: 10px;
 }
-h3 {
-    width: 100%;
-    background-color: #F4F9F9;
-    color: #2A2D43;
-    display: block;
-    padding: 20px 0px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;;
-    margin: 0px;
-    margin-bottom: 10px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    text-transform: capitalize;
-}
-hr { 
-    margin: 0;
-}
 
 .kids {
     background-color: #DADDFC;
+    opacity: 95%;
+}
+
+.kids:hover {
+    margin: 20px;
+    padding: 20px;
+    opacity: 100%;
 }
 
 .beginners { 
 background-color: #98BAE7;
 }
+.beginners:hover {
+    margin: 20px;
+    padding: 20px;
+    opacity: 100%;
+}
 
 .advanced {
     background-color: #97BFB4;
+}
+.advanced:hover {
+    margin: 20px;
+    padding: 20px;
+    opacity: 100%;
 }
 
 .mma {
     background-color: #FC997C;
 }
+.mma:hover {
+    margin: 20px;
+    padding: 20px;
+    opacity: 100%;
+}
 
 .open {
     background-color: #97BFB4;
+}
+.open:hover {
+    margin: 20px;
+    padding: 20px;
+    opacity: 100%;
 }
 
 
