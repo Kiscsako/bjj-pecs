@@ -48,9 +48,9 @@ nav {
 
 main {
     display: block;
-    width: 100%;
+    width: 95%;
     margin: 20px auto;
-    padding: 10px;
+    padding: 40px 0px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, 
                 rgba(0, 0, 0, 0.23) 0px 3px 6px;
     border-radius: 10px;
@@ -441,7 +441,6 @@ border-radius: 10px;
 ---------- Timetable ----------
 */
 
-main .sch
 .schedule-container {
     display: flex;
     width: 100%;
@@ -482,7 +481,8 @@ main .sch
 
     
 .schedule-content {
-    padding: 5px;
+    padding: 10px;
+    width: 200px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
@@ -490,12 +490,10 @@ main .sch
 .schedule-item {
     position: relative;
     min-height: 100px;
-    min-width: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-    margin: 12px;
+    margin: 15px 0px;
     border-radius: 5px;
     background-color: #F4F9F9;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
@@ -524,8 +522,7 @@ main .sch
 }
 
 .kids:hover {
-    margin: 20px;
-    padding: 20px;
+    margin: 30px 0px;
     opacity: 100%;
 }
 
@@ -533,8 +530,7 @@ main .sch
 background-color: #98BAE7;
 }
 .beginners:hover {
-    margin: 20px;
-    padding: 20px;
+    margin: 30px 0px;
     opacity: 100%;
 }
 
@@ -542,8 +538,7 @@ background-color: #98BAE7;
     background-color: #97BFB4;
 }
 .advanced:hover {
-    margin: 20px;
-    padding: 20px;
+    margin: 30px 0px;
     opacity: 100%;
 }
 
@@ -551,8 +546,7 @@ background-color: #98BAE7;
     background-color: #FC997C;
 }
 .mma:hover {
-    margin: 20px;
-    padding: 20px;
+    margin: 30px 0px;
     opacity: 100%;
 }
 
@@ -560,8 +554,7 @@ background-color: #98BAE7;
     background-color: #97BFB4;
 }
 .open:hover {
-    margin: 20px;
-    padding: 20px;
+    margin: 30px 0px;
     opacity: 100%;
 }
 
