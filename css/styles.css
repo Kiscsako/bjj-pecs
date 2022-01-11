@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
 :root {
     --main-bg-color: #F4F9F9;
-    --sec-bg-color: #191919;
+    --sec-bg-color: #171717;
     --nav-desktop-font-size: 1.1rem;
     --nav-tablet-font-size: 1rem;
     --nav-mobile-font-size: 0.8rem;
@@ -91,8 +93,8 @@ main {
 
 
 .inner-content {
-    width: 90%;
-    margin: auto;
+    width: 95%;
+    margin: 24px auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -103,6 +105,7 @@ main {
     height: auto;
 }
 .inner-img-container img {
+    box-sizing: content-box;
     width: 100%;
     max-width: 100%;
     height: auto;
