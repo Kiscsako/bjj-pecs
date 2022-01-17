@@ -482,7 +482,7 @@ border: 1px solid var(--main-bg-color);
 
 @media screen and (max-width: 760px) {
     main {
-        top: 30vh;
+        top: 10vh;
     }
     .cta-heading a {
         font-size: var(--cta-lg-fs);
