@@ -115,7 +115,7 @@ main {
     display: block;
     width: 100%;
     margin: auto;
-    top: -10vh;
+    top: -15vh;
 }
 .main-container {
     width: 100%;
@@ -437,7 +437,7 @@ border: 1px solid var(--main-bg-color);
         padding: 1rem 0.8rem;
     }
     main {
-        top: -10vh;
+        top: -5vh;
     }
     
     .inner-content div {
@@ -481,7 +481,9 @@ border: 1px solid var(--main-bg-color);
 /* Mobile */
 
 @media screen and (max-width: 760px) {
-   
+    main {
+        top: 30vh;
+    }
     .cta-heading a {
         font-size: var(--cta-lg-fs);
     }
