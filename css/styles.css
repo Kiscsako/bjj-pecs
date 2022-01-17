@@ -504,6 +504,7 @@ border: 1px solid var(--main-bg-color);
         align-content: space-between;
         justify-content: space-between;
         margin: 8px;
+        margin-bottom: 10vh;
     }
     .nav-control h1 {
         font-weight: 400;
