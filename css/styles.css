@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 :root {
 /*-- Font sizes (1rem => 16px) --*/
-    --nav-fs: clamp(1rem, 1vw, 4rem);
+    --nav-fs: clamp(1.5rem, 1vw, 3rem);
     --cta-lg-fs: clamp(2rem, 2vw + 0.5rem, 6rem);
     --quote: clamp(3rem, 2vw + 0.5rem, 8rem);
 /*-- Colors --*/
@@ -15,7 +15,7 @@
 }
 @media screen and (max-width: 1360px) {
     :root {
-        --nav-fs: clamp(0.8rem, 1vw + 0.5rem, 2.5rem);
+        --nav-fs: clamp(1.2rem, 1vw + 0.5rem, 3rem);
         --cta-lg-fs: clamp(1rem, 2vw + 0.4rem, 3rem);
         --quote: clamp(0.6rem, 3vw + 0.5rem, 6rem);
         --margin-lg: 8rem;
@@ -24,7 +24,7 @@
  }
 @media screen and (max-width: 760px) {
      :root {
-         --nav-fs: clamp(0.3rem, 4vw + 0.2rem, 1rem);
+         --nav-fs: clamp(0.5rem, 4vw + 0.4rem, 1.2rem);
          --cta-lg-fs: clamp(0.2rem, 3vw + 0.2rem, 2rem);
          --quote: clamp(0.4rem, 3vw + 0.3rem, 3rem);
          --margin-lg: 6rem;
@@ -48,8 +48,12 @@ body {
     color: var(--sec-bg-color);
 }
 h1,h2,h3,h4,h5,h6,nav {
-    font-family: 'Bungee', cursive;
+    /*font-family: 'Bungee', cursive;*/
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
 }
+
 
 a {
     text-decoration: none;
@@ -126,12 +130,9 @@ main {
     font-weight: 800;
     font-size: var(--heading-desktop-font-size);
     color: var(--sec-bg-color);
-    padding: 20px;
+    padding: 16px;
     
 }
-
-
-
 .inner-content {
     width: 95%;
     margin: 24px auto;
@@ -147,8 +148,8 @@ main {
 .inner-img-container img {
     box-sizing: content-box;
     width: 100%;
+    height: 100%;
     max-width: 100%;
-    height: auto;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, 
                 rgba(0, 0, 0, 0.07) 0px 2px 4px, 
                 rgba(0, 0, 0, 0.07) 0px 4px 8px, 
@@ -166,13 +167,13 @@ main {
     
 }
 .inner-txt-container h3 {
-    padding: 24px;
+    margin: 16px 16px;
 }
 .inner-txt {
     width: 100%;
     height: auto;
     text-align: justify;
-    padding: 24px;
+    padding: 16px;
 }
 
 .person {
@@ -244,7 +245,7 @@ main {
     background-size: cover;
     background: linear-gradient(180deg, 
      rgba(244,249,249,0) 0%,
-     rgba(244,249,249,0.681185853247549) 70%,
+     rgba(244,249,249,0.681185853247549) 80%,
      rgba(244,249,249,1) 100%),
     url(../pictures/csoportkep_1920.png);
     background-size: cover;
@@ -263,7 +264,7 @@ main {
     width: 18%;
     height: auto;
     position: relative;
-    top: -15vw;
+    top: -10vw;
     border-radius: 50%;
     box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
     transition: width 0.5s ease-in-out;
@@ -482,7 +483,7 @@ border: 1px solid var(--main-bg-color);
 
 @media screen and (max-width: 760px) {
     main {
-        top: 10vh;
+        top: 5vh;
     }
     .cta-heading a {
         font-size: var(--cta-lg-fs);
@@ -504,7 +505,7 @@ border: 1px solid var(--main-bg-color);
         align-content: space-between;
         justify-content: space-between;
         margin: 8px;
-        margin-bottom: 10vh;
+        margin-bottom: 5vh;
     }
     .nav-control h1 {
         font-weight: 400;
@@ -534,6 +535,9 @@ border: 1px solid var(--main-bg-color);
         margin: auto;
         text-align: center;
     }
+    .nav_links_container {
+        margin-top: -5vh;
+    }
 
     .nav_link {
         width: 100%;
@@ -551,9 +555,11 @@ border: 1px solid var(--main-bg-color);
 */
 
 .schedule-container {
-    display: flex;
+    display: block;
     width: 100%;
     height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
     justify-content: center;
     align-items: center;
 }
@@ -564,7 +570,11 @@ border: 1px solid var(--main-bg-color);
 }
 .schedule {
     display: flex;
-    flex-wrap: wrap;
+    width: 1400px;
+    margin: auto;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
     justify-content: center;
 }
 .day {
